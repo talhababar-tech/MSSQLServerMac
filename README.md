@@ -11,7 +11,7 @@ This is a step by step guide for running SQL Server on M1 or latest Mac using az
 
 3 - Open terminal and run this command: 
 
-    'docker pull mcr.microsoft.com/azure-sql-edge' 
+    docker pull mcr.microsoft.com/azure-sql-edge 
 
 this will pull/download container image to local machine
 
@@ -56,13 +56,16 @@ Server Group: <default> <br>
 
 9 - Now you have SQL Server up and running, you can either create your own database or download a database
 
-10 - Go to https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms 
+10 - To download adventure works database, go to https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms 
 
-Download AdventureWorks2019.bak <br>
-Run the command below in terminal <br>
-docker cp PATH containerid:/var/opt/mssql/data/<br>
-replace PATH and containerid with the right values<br>
-docker cp ~/Downloads/AdventureWorks2019.bak 8a4231a51bad5e1c91f771809f0f263a379ce9c767e72672ca69152852e47c43:/var/opt/mssql/data/<br>
+- Download AdventureWorks2019.bak <br>
+- Run the command below in terminal <br>
+
+    docker cp <PATH> <containerid>:/var/opt/mssql/data/
+
+- replace PATH and containerid with the right values<br>
+
+    docker cp ~/Downloads/AdventureWorks2019.bak 8a4231a51bad5e1c91f771809f0f263a379ce9c767e72672ca69152852e47c43:/var/opt/mssql/data/<br>
 
 11 - After this refresh connection in Azure data studio and right click on database and click on restore database
 
