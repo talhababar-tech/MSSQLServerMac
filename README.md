@@ -61,7 +61,7 @@ Server Group: <default> <br>
 - Download AdventureWorks2019.bak <br>
 - Run the command below in terminal <br>
 
-    docker cp <PATH> <containerid>:/var/opt/mssql/data/
+    docker cp PATH containerid:/var/opt/mssql/data/
 
 - replace PATH and containerid with the right values<br>
 
