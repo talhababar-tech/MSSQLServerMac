@@ -9,7 +9,11 @@ This is a step by step guide for running SQL Server on M1 or latest Mac using az
 
 2 - Download Azure Data studio
 
-3 - Open terminal and run this command: 'docker pull mcr.microsoft.com/azure-sql-edge' this will pull/download container image to local machine
+3 - Open terminal and run this command: 
+
+    'docker pull mcr.microsoft.com/azure-sql-edge' 
+
+this will pull/download container image to local machine
 
 4 - Once the download is completed, run the following command to launch an instance of the Docker image you just downloaded: 
     
@@ -44,7 +48,7 @@ type 'docker ps' to confirm the container is running, also in docker desktop you
 Server Name: localhost <br>
 Authentication Type: SQL Login <br>
 User name: sa <br>
-Password: reallyStrongPwd123 <br>
+Password: bigStrongPwd <br>
 Database Name: <default> <br>
 Server Group: <default> <br>
 
